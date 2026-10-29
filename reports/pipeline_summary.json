@@ -1,0 +1,70 @@
+{
+  "model_metrics": [
+    {
+      "Model": "Logistic Regression",
+      "ROC-AUC": 0.878,
+      "PR-AUC": 0.7793,
+      "F1-Score": 0.6923,
+      "Brier Score (Calibration)": 0.1326,
+      "Estimated Risk Cost": 1105
+    },
+    {
+      "Model": "Random Forest",
+      "ROC-AUC": 0.879,
+      "PR-AUC": 0.7743,
+      "F1-Score": 0.6908,
+      "Brier Score (Calibration)": 0.1268,
+      "Estimated Risk Cost": 1111
+    },
+    {
+      "Model": "XGBoost",
+      "ROC-AUC": 0.8777,
+      "PR-AUC": 0.774,
+      "F1-Score": 0.6873,
+      "Brier Score (Calibration)": 0.1301,
+      "Estimated Risk Cost": 1109
+    }
+  ],
+  "benchmark_summary": {
+    "shap_latency_ms": 9.09,
+    "lime_latency_ms": 111.67,
+    "rank_correlation": 0.879,
+    "directional_concordance_pct": 100.0
+  },
+  "sample_adverse_action_notice": {
+    "applicant_id": "APP-TEST-1",
+    "decision": "DENIED",
+    "predicted_default_probability": 98.51,
+    "regulatory_cutoff": 35.0,
+    "actionable_reasons": [
+      {
+        "feature": "credit_score",
+        "current_value": 512.0,
+        "impact_score": 1.3339,
+        "notice_statement": "Credit score does not meet minimum credit tier guidelines"
+      },
+      {
+        "feature": "loan_grade_num",
+        "current_value": 5.0,
+        "impact_score": 1.1974,
+        "notice_statement": "Assigned underwriting risk rating exceeds risk tolerance threshold"
+      },
+      {
+        "feature": "loan_percent_income",
+        "current_value": 0.5481,
+        "impact_score": 0.7797,
+        "notice_statement": "High loan amount relative to verifiable annual income"
+      },
+      {
+        "feature": "loan_int_rate",
+        "current_value": 20.59,
+        "impact_score": 0.7421,
+        "notice_statement": "High borrowing cost tier assigned based on current credit profile"
+      }
+    ],
+    "actionable_recourse": [
+      "Reduce requested loan principal to decrease loan-to-income exposure below 25%.",
+      "Improve credit score by maintaining 6+ months of on-time payments and resolving delinquent remarks."
+    ]
+  }
+}
