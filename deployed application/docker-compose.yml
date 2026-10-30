@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  streamlit-web:
+    build:
+      context: ..
+      dockerfile: "deployed application/Dockerfile"
+    container_name: loan-xai-web
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - PORT=8501
+      - STREAMLIT_SERVER_HEADLESS=true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  api-service:
+    build:
+      context: ..
+      dockerfile: "deployed application/Dockerfile"
+    container_name: loan-xai-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    entrypoint: ["python", "working prototype/api_prototype.py", "8080"]

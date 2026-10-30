@@ -1,0 +1,24 @@
+{
+  "test_suite_name": "Credit Risk & XAI System Verification Suite",
+  "total_tests_executed": 7,
+  "tests_passed": 7,
+  "tests_failed": 0,
+  "test_errors": 0,
+  "pass_rate_pct": 100.0,
+  "total_execution_time_sec": 1.94,
+  "latency_stress_test": {
+    "sample_size": 100,
+    "mean_latency_ms": 18.1,
+    "min_latency_ms": 15.09,
+    "max_latency_ms": 33.53,
+    "p95_latency_ms": 27.82,
+    "p99_latency_ms": 33.32
+  },
+  "cv_stability": {
+    "num_folds": 5,
+    "mean_roc_auc": 0.8939,
+    "std_roc_auc": 0.0008,
+    "mean_pr_auc": 0.794,
+    "std_pr_auc": 0.001
+  }
+}

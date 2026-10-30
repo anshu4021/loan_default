@@ -1,0 +1,56 @@
+{
+  "Logistic Regression (Baseline)": {
+    "ROC_AUC": 0.8872,
+    "PR_AUC": 0.7781,
+    "Accuracy": 0.8253,
+    "Precision": 0.6486,
+    "Recall": 0.7644,
+    "F1_Score": 0.7018,
+    "Brier_Score": 0.1295,
+    "Financial_Cost_Score": 8562,
+    "Training_Time_Sec": 5.84,
+    "Inference_Latency_ms": 0.003,
+    "Confusion_Matrix": {
+      "TN": 12395,
+      "FP": 2227,
+      "FN": 1267,
+      "TP": 4111
+    }
+  },
+  "Random Forest": {
+    "ROC_AUC": 0.8919,
+    "PR_AUC": 0.7888,
+    "Accuracy": 0.8311,
+    "Precision": 0.6589,
+    "Recall": 0.7711,
+    "F1_Score": 0.7106,
+    "Brier_Score": 0.1238,
+    "Financial_Cost_Score": 8302,
+    "Training_Time_Sec": 3.27,
+    "Inference_Latency_ms": 0.05,
+    "Confusion_Matrix": {
+      "TN": 12475,
+      "FP": 2147,
+      "FN": 1231,
+      "TP": 4147
+    }
+  },
+  "XGBoost (Champion)": {
+    "ROC_AUC": 0.8941,
+    "PR_AUC": 0.794,
+    "Accuracy": 0.8246,
+    "Precision": 0.6413,
+    "Recall": 0.7886,
+    "F1_Score": 0.7074,
+    "Brier_Score": 0.1263,
+    "Financial_Cost_Score": 8057,
+    "Training_Time_Sec": 2.47,
+    "Inference_Latency_ms": 0.018,
+    "Confusion_Matrix": {
+      "TN": 12250,
+      "FP": 2372,
+      "FN": 1137,
+      "TP": 4241
+    }
+  }
+}

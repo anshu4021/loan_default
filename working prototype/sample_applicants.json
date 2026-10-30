@@ -1,0 +1,62 @@
+[
+  {
+    "applicant_id": "PRIME-001",
+    "name": "Sarah Jenkins (Prime Approved)",
+    "description": "High credit score, low DTI, stable tenure, low loan-to-income exposure.",
+    "data": {
+      "person_age": 42,
+      "person_income": 95000,
+      "person_emp_length": 12,
+      "loan_intent": "HOMEIMPROVEMENT",
+      "loan_grade": "A",
+      "loan_amnt": 12000,
+      "loan_int_rate": 7.25,
+      "loan_percent_income": 0.1263,
+      "debt_to_income": 0.18,
+      "credit_score": 780,
+      "cb_person_default_on_file": "N",
+      "cb_person_cred_hist_length": 18,
+      "person_home_ownership": "MORTGAGE"
+    }
+  },
+  {
+    "applicant_id": "SUBPRIME-002",
+    "name": "David Martinez (Subprime Denied)",
+    "description": "Adverse credit history, high interest grade, excessive DTI, borrowing >50% of income.",
+    "data": {
+      "person_age": 29,
+      "person_income": 32000,
+      "person_emp_length": 2,
+      "loan_intent": "DEBTCONSOLIDATION",
+      "loan_grade": "E",
+      "loan_amnt": 18000,
+      "loan_int_rate": 21.5,
+      "loan_percent_income": 0.5625,
+      "debt_to_income": 0.52,
+      "credit_score": 520,
+      "cb_person_default_on_file": "Y",
+      "cb_person_cred_hist_length": 5,
+      "person_home_ownership": "RENT"
+    }
+  },
+  {
+    "applicant_id": "BORDERLINE-003",
+    "name": "Alex Taylor (Borderline Assessment)",
+    "description": "Moderate credit score, high loan-to-income, moderate DTI, near policy threshold.",
+    "data": {
+      "person_age": 34,
+      "person_income": 54000,
+      "person_emp_length": 4,
+      "loan_intent": "PERSONAL",
+      "loan_grade": "C",
+      "loan_amnt": 19000,
+      "loan_int_rate": 13.9,
+      "loan_percent_income": 0.3519,
+      "debt_to_income": 0.36,
+      "credit_score": 645,
+      "cb_person_default_on_file": "N",
+      "cb_person_cred_hist_length": 9,
+      "person_home_ownership": "RENT"
+    }
+  }
+]

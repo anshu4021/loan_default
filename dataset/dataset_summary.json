@@ -1,0 +1,82 @@
+{
+  "dataset_name": "Credit Risk & Loan Default Benchmark Dataset (1 Lakh)",
+  "total_records": 100000,
+  "total_features": 13,
+  "target_variable": "loan_status",
+  "default_count": 26889,
+  "non_default_count": 73111,
+  "default_rate_pct": 26.89,
+  "file_size_mb": 6.51,
+  "feature_summary": {
+    "person_age": {
+      "dtype": "int64",
+      "unique_values": 57,
+      "missing_values": 0
+    },
+    "person_income": {
+      "dtype": "int64",
+      "unique_values": 2506,
+      "missing_values": 0
+    },
+    "person_home_ownership": {
+      "dtype": "str",
+      "unique_values": 4,
+      "missing_values": 0
+    },
+    "person_emp_length": {
+      "dtype": "int64",
+      "unique_values": 42,
+      "missing_values": 0
+    },
+    "loan_intent": {
+      "dtype": "str",
+      "unique_values": 6,
+      "missing_values": 0
+    },
+    "loan_grade": {
+      "dtype": "str",
+      "unique_values": 6,
+      "missing_values": 0
+    },
+    "loan_amnt": {
+      "dtype": "int64",
+      "unique_values": 439,
+      "missing_values": 0
+    },
+    "loan_int_rate": {
+      "dtype": "float64",
+      "unique_values": 2396,
+      "missing_values": 0
+    },
+    "loan_percent_income": {
+      "dtype": "float64",
+      "unique_values": 5407,
+      "missing_values": 0
+    },
+    "debt_to_income": {
+      "dtype": "float64",
+      "unique_values": 595,
+      "missing_values": 0
+    },
+    "credit_score": {
+      "dtype": "int64",
+      "unique_values": 428,
+      "missing_values": 0
+    },
+    "cb_person_default_on_file": {
+      "dtype": "str",
+      "unique_values": 2,
+      "missing_values": 0
+    },
+    "cb_person_cred_hist_length": {
+      "dtype": "int64",
+      "unique_values": 57,
+      "missing_values": 0
+    },
+    "loan_status": {
+      "dtype": "int64",
+      "unique_values": 2,
+      "missing_values": 0
+    }
+  }
+}
