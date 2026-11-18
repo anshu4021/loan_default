@@ -9,6 +9,8 @@
 *.mp4 binary
 *.ico binary
 *.pdf binary
+*.pptx binary
+*.ppt binary
 *.joblib binary
 *.pkl binary
 *.pickle binary

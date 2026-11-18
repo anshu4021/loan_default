@@ -11,7 +11,10 @@ An enterprise-grade, compliance-ready Machine Learning and Explainable AI (XAI) 
 Features automated generation of legally required **Adverse Action Notices (ECOA Regulation B / FCRA)** and real-time interactive risk scoring across Web UI, Terminal CLI, and REST API.
 
 > 📄 **Download the Complete Interview & Capstone PDF Guide:**  
-> [**`Explainable_AI_Loan_Default_Prediction_Master_Guide.pdf`**](./Explainable_AI_Loan_Default_Prediction_Master_Guide.pdf)
+> [**`Explainable_AI_Loan_Default_Prediction_Master_Guide.pdf`**](./Explainable_AI_Loan_Default_Prediction_Master_Guide.pdf)  
+> 
+> 📊 **Download the Technical Defense PowerPoint Presentation (PPT):**  
+> [**`Explainable_AI_Loan_Default_Prediction_Presentation.pptx`**](./Explainable_AI_Loan_Default_Prediction_Presentation.pptx)
 
 ---
 
@@ -90,6 +93,8 @@ loan_default/
 ├── app.py                          # Main interactive Streamlit application
 ├── run_pipeline.py                 # Master end-to-end execution runner
 ├── generate_pdf_report.py          # Executive PDF generator script
+├── generate_presentation.py        # Executive PowerPoint PPT generator script
+├── Explainable_AI_Loan_Default_Prediction_Presentation.pptx # Master PPT Presentation
 ├── requirements.txt                # Project dependencies
 └── README.md                       # Main project overview
 ```
